@@ -1,0 +1,502 @@
+html, body{
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    position: fixed;
+    background-color: white;
+    margin: 0px;
+    margin-top:-8px ;
+    padding: 0px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    box-shadow: 10px 10px 10px gray;
+    z-index: 1;
+    text-shadow: 0px 1px 0px rgb(120, 220, 238);
+}
+.namebox{
+    
+    margin-left: 190px;
+    height: 80px;
+}
+#name{
+    padding-top: 5px;
+    font-weight: bold;
+    
+    width: 150px;
+    align-content: center;
+    font-size: 28px;
+    
+    
+}
+#name1{
+     font-weight: bold;
+   
+    text-transform: capitalize;
+    
+    font-size: 14px;
+    color: gray;
+}
+#navbar{
+    display: flex;
+    margin-left: 650px;
+    background-color: transparent;
+    width: 30%;
+    justify-content: space-evenly;
+}
+#nav{
+    padding-left: 20px;
+    align-content: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    
+
+}
+#mainbox{
+    margin-top: 150px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+  
+}
+.box{
+    
+    /* background: linear-gradient(135deg,#2193b0,#6dd5ed);
+    background: linear-gradient(135deg,#a18cd1,#fbc2eb);  */
+    background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+    width: 1720px;
+    height: 1000px;
+    margin-top: 6px;
+    padding-left: 190px;
+    padding-top: 10px;
+    display: flex;
+}
+
+#box1{
+    font-weight: bolder;
+    height: 150px;
+    width: 450px;
+    font-size:xx-large;
+    color: #e0e0e0;
+    
+}
+#picset{
+    display: flex;
+}
+#box2{
+    margin-top: 2px;
+    padding-top: 10px;
+    color: #f9eaea;
+    height: 50px;
+    width: 450px;
+    font-weight: lighter;
+     font-size: 20px;
+}
+#box3{
+  
+    
+    font-weight: lighter;
+    position:relative;
+    width: 190%;
+    height: 200px;
+    font-size: 20px;
+    color: #ade3e9;
+    text-align:justify;
+   
+    
+}
+#picbox{
+    height: 400px;
+    width: 350px;
+    margin-left: 500px;
+    
+    margin-top: 0px;
+    border-radius: 30px;
+    align-items: center;
+    animation: right to left;
+}
+#picbox img{
+    height: 400px;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 14px 14px 14px black;
+}
+@keyframes moveandrotate {
+    0% {transform: translateX(0px) rotate(0deg);}
+    50% {transform: translateX(-200px) translateY(100px) rotate(90deg);}
+    100% { transform: translateX(0px) rotate(0deg);}
+}
+#picbox:hover img{
+    
+    scale: 1.1;
+    transition:  ease-in-out 0.3s;
+    box-shadow: 14px 14px 14px white;
+    animation: moveandrotate 5s ease-in-out infinite ;
+}
+#but{
+    margin-left: 20px;
+    margin-top: 200px;
+    
+    
+}
+#but1{
+    height: 60px;
+    width: 150px;
+   
+    margin: 10px;
+    border-radius: 30px ;
+    background-color: rgb(253, 210, 100);
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    box-shadow: 8px 8px 15px;
+}
+#but1:hover {
+
+    scale: 1.1;
+    transition:  ease-in-out 0.3s;
+}
+#but2{
+    height: 60px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 30px;
+    background:transparent;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgb(209, 201, 201);
+    color: rgb(209, 201, 201);
+    box-shadow: 8px 8px 15px black;
+    cursor: pointer;
+}
+#but2:hover {
+
+    scale: 1.1;
+    transition:  ease-in-out 0.3s;
+}
+#but3{
+    height: 60px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 30px ;
+    background-color: rgb(246, 245, 241);
+    font-weight: bold;
+    border-color: rgb(85, 191, 237);
+    color:rgb(85, 191, 237) ;
+    border-style: solid;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    box-shadow: 8px 8px 15px black;
+}
+#but3:hover {
+
+    scale: 1.1;
+    transition:  ease-in-out 0.3s;
+}
+@keyframes popup {
+    0% { transform: translateY(0px) scale(0.5) ;}
+    100%{transform: translateY(50px) scale(0.9) ;}
+    0%{background-color: #7d9bee7a;}
+    50%{background-color: rgb(78, 123, 80);}
+    100%{background-color: rgb(88, 115, 157);}
+}
+#scroll{
+    height: 80px;
+    width: 80px;
+    background-color: #b6b7bb7a;
+    margin-top: 200px;
+    margin-left: 0px;
+    margin-right: 100px;
+    border-radius: 50%;
+    font-size:small;
+    text-align: center; 
+    color: white;
+    box-shadow: 1px 10px 10px rgb(157, 178, 219);
+    animation: popup 2s ease-out 0.2ms infinite ;
+}
+#scroll1{
+    font-size: xx-large;
+    z-index: 0;
+    
+}
+
+#about1{
+    margin-left: 48%;
+    padding: 0;
+    font-size: xxx-large;
+    font-weight: bolder;
+    
+}
+#getto{
+    margin-left: 48.5%;
+    color: rgb(63, 61, 61);
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+
+#about2{
+    display: flex ;
+    margin-top:80px ;
+}
+#who{
+    margin-left: 18%;
+    height: 600px;
+    width: 600px;
+    border-radius: 30px;
+    background-color: rgb(63, 105, 105);
+    padding-left: 40px;
+    padding-top: 20px;
+     
+    border-style:hidden;
+    border-color: #ecf0f2;
+    box-shadow: 0px 0px 14px rgb(203, 195, 195);
+    font-size: 28px;
+  
+    transform: perspective(800px) rotateY(25deg)  rotateX(10deg) scale(80%);
+    opacity: 0.8;
+     background-color: #e1f0ff;
+
+&:hover{
+       transform: perspective(1500px) rotateY(-25deg)  rotateX(10deg) translateY(-50px) scale(80%);
+       transition: ease-in 0.6s;
+       opacity:1 ;
+        background-color: #ecffff;
+}
+}
+#namep{
+    font-size: 22px;
+}
+#who1{
+    
+    font-size: 28px;
+    
+    height: 800px;
+    width: 25%;
+   
+    border-radius: 30px;
+    
+}
+#edu{
+    padding-left: 10px;
+    width: 100%;
+    
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px rgb(203, 195, 195);
+    background-color: #f5f3f5;
+    border-radius: 30px;
+    height: 320px;
+    transform: perspective(800px)  rotateY(0deg) rotateX(40deg) scale(80%);
+    opacity: 0.8;
+     box-shadow: 0px 20px 100px #555;
+
+&:hover{
+
+        transform: perspective(800px) rotateX(0deg) rotateY(0deg) translateY(10px) scale(90%) ;
+        transition: ease all 0.5s;
+       opacity:1 ;
+        background-color: #ecffff;
+        
+       
+}    
+
+
+}
+#edu1{
+    padding-left: 10px;
+    width: 97%;
+    margin-top: 40px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px rgb(203, 195, 195);
+    
+    border-radius: 30px;
+    height: 320px;
+    background-color: rgb(229, 224, 229);
+     transform: perspective(800px) rotateX(10deg) rotateY(-25deg)  scale(80%) ;
+     box-shadow: 0px 10px 10px black;
+ &:hover{
+
+        transform: perspective(800px) rotateX(10deg) rotateY(35deg) translateY(-50px) scale(90%) ;
+        transition: ease-in 0.6s;
+       opacity:1 ;
+        background-color: #ecffff;
+
+       
+}    
+}
+#horiline{
+    height: 2px;
+    width: 90%;
+    margin-top: 10px;
+    background-color: #7cc1de;
+}
+#horiline1{
+    height: 2px;
+    width: 90%;
+    margin-top: 25px;
+    background-color: #e7ebed;
+}
+#inwho{
+    padding-right: 60px;
+    font-size: 20px;
+    color: rgb(54, 41, 41);
+    text-align: justify;
+}
+#certi{
+    
+    height: 100px;
+    width: 90%;
+    color: black;
+    
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px gray;
+}
+@media (min-width:200px) and  (max-width : 1000px) {
+    header{
+        width: 99%;
+    }
+    .box{
+       width: 100%;
+       height: 900px;
+       padding-left: 0px;
+       margin: 0px;
+    }
+    .namebox{
+        
+        margin-left: 4px;
+    }
+    #navbar{
+        margin-left: 40%;
+        margin-top: 7.5%;
+        position: absolute;
+        }
+    #nav{
+        font-size: 10px;
+        
+        padding-left: 10px;
+    }
+    #picbox{
+       position:absolute;
+       margin-left: 55%;
+       height: 100px;
+    width: 100px; 
+    border-radius: 50%;
+    }
+    #picbox img{
+        height: 150px;
+    width: 150px;
+    margin:0px;
+    border-radius: 50%;
+    }
+    #mainbox{
+        margin-top: 70px;
+        width: 100%;
+    }
+    #box1{
+        width: 100%;
+        font-size: medium;
+        margin-left: 8px;
+    }
+    #box2{
+        margin-top: 50px;
+        margin-left: 8px;
+        width: 100%;
+    }
+    #box3{
+       margin-left: 8px;
+       height: 400px;
+       width: 95%;
+       font-size: medium;
+    }
+    #scroll{
+        margin-top: 450px;
+    }
+    #but{
+      margin-left: 0px;
+      margin-top: 350px;
+    }
+    #about{
+        margin-left: -15%;
+       
+        font-size: 15px;
+        margin-top: 20px;
+        
+    }
+    #about1{
+        font-size: 30px;
+    }
+    #getto{
+        margin-left: 47.5%;
+        font-size: 14px;
+    }
+    #about2{
+        margin-top: 10px;
+        margin-left: 0px;
+        display: block;
+        width: 100%;
+       
+       
+    }
+    #who{
+        margin-left: 0px;
+        padding: 2px;
+      
+       height: 590px;
+       width: 100%;
+        font-size: 28px;
+    }
+    #inwho{
+        font-size: 20px;
+        padding: 0px;
+        
+    }
+    #who1{
+      margin-top: -10px;
+       margin-left: 0px;
+        
+        padding: 0px;
+        height: 500px;
+        width: 100%;
+        
+        
+       
+    }
+    #namep{
+        font-size: 18px;
+    }
+    #edu{
+         margin-top: 0px;
+         height: 350px;
+         width: 100%;
+         padding: 5;
+       margin-left: 0px;
+    }
+    #edu1{
+       
+        height: 305px;
+         width: 100%;
+        margin-top: 10px;
+       margin-left: 0px;
+        padding: 05;
+    }
+   ol{
+    list-style-type: none;
+   }
+   #but1{
+    margin-top:40px ;
+   }
+  
+
+}
